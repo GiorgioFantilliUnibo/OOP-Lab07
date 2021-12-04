@@ -168,5 +168,13 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
             }
             return this.name.equals( ((Sport)o).name );
         }
+        
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public int hashCode() {
+            return this.name.hashCode();
+        }
     }
 }

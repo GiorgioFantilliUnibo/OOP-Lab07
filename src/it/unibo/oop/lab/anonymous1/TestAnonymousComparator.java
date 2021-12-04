@@ -77,8 +77,7 @@ public final class TestAnonymousComparator {
         denzelUsers.sort(new java.util.Comparator<User>() {
             @Override
             public int compare(User o1, User o2) {
-                // TODO Auto-generated method stub
-                return 0;
+                return o1.getAge() - o2.getAge();
             }
         });
         /*

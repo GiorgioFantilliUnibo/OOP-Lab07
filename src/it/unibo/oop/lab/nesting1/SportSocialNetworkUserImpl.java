@@ -54,7 +54,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * TODO: initialize properly these sports
      */
     static {
-        SOCCER = null;
+        SOCCER = new Sport();
         F1 = null;
         MOTOGP = null;
         VOLLEY = null;
@@ -141,6 +141,8 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
         /**
          * @param name
          *            sport name
+         * @throws NullPointerException
+         *            if the parameter {@link name} is null
          */
         public Sport(final String name) {
             this.name = Objects.requireNonNull(name);

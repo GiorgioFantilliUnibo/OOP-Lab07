@@ -150,7 +150,16 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
          */
         @Override
         public boolean equals(final Object o) {
-            return false;
+            if (o == null) {
+                return false;
+            }
+            if (this == o) {
+                return true;
+            }
+            if (this.getClass() != o.getClass()) {
+                return false;
+            }
+            return this.name.equals( ((Sport)o).name );
         }
     }
 }

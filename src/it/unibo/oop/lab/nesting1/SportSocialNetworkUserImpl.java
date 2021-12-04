@@ -130,16 +130,14 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
         return false;
     }
 
-    /*
-     * TODO
-     * 
-     * Complete the definition of this static inner class defining a Sport along
-     * with its bare name.
+
+    /**
+     * static inner class that defines a Sport along with its name.
      */
     public static final class Sport {
-        
+
         private final String name;
-        
+
         /**
          * @param name
          *            sport name
@@ -147,7 +145,7 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
         public Sport(final String name) {
             this.name = Objects.requireNonNull(name);
         }
-        
+
         /*
          * Redefine equals so that two sports are equal only if they feature the
          * very same name. Remember that you must also redefine hashCode()!
@@ -166,9 +164,9 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
             if (this.getClass() != o.getClass()) {
                 return false;
             }
-            return this.name.equals( ((Sport)o).name );
+            return this.name.equals(((Sport) o).name);
         }
-        
+
         /**
          * {@inheritDoc}
          */

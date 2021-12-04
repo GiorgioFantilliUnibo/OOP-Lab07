@@ -74,7 +74,13 @@ public final class TestAnonymousComparator {
          * 
          * REFER TO LESSON 13-Advanced-Mechanisms.pdf, slide 41
          */
-        // TODO
+        denzelUsers.sort(new java.util.Comparator<User>() {
+            @Override
+            public int compare(User o1, User o2) {
+                // TODO Auto-generated method stub
+                return 0;
+            }
+        });
         /*
          * expected Result
          */

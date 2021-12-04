@@ -4,6 +4,7 @@
 package it.unibo.oop.lab.nesting1;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import it.unibo.oop.lab.socialnetwork.SocialNetworkUserImpl;
@@ -138,6 +139,10 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
     public static final class Sport {
         
         private final String name;
+        
+        public Sport(final String name) {
+            this.name = Objects.requireNonNull(name);
+        }
         
         /*
          * Redefine equals so that two sports are equal only if they feature the

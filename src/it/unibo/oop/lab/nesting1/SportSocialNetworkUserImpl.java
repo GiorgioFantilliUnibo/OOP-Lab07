@@ -140,6 +140,10 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
         
         private final String name;
         
+        /**
+         * @param name
+         *            sport name
+         */
         public Sport(final String name) {
             this.name = Objects.requireNonNull(name);
         }
@@ -147,6 +151,9 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
         /*
          * Redefine equals so that two sports are equal only if they feature the
          * very same name. Remember that you must also redefine hashCode()!
+         */
+        /**
+         * {@inheritDoc}
          */
         @Override
         public boolean equals(final Object o) {

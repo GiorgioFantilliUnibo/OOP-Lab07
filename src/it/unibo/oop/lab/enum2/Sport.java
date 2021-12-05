@@ -76,7 +76,7 @@ public enum Sport {
      * 
      * 2) public boolean isIndoorSport()
      * 
-     * Must return true in case the sport is practices indoor
+     * Must return 
      * 
      * 
      * 3) public Place getPlace()
@@ -95,6 +95,9 @@ public enum Sport {
         return this.nTeamMember == 1;
     }
     
+    /**
+     * @return true in case the sport is practices indoor.
+     */
     public boolean isIndoorSport() {
         return this.activityPlace.equals(Place.INDOOR);
     }

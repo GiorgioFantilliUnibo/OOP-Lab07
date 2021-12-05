@@ -6,8 +6,9 @@ package it.unibo.oop.lab.enum2;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import java.util.function.Predicate;
 
-import it.unibo.oop.lab.enum1.Sport;
+import it.unibo.oop.lab.enum2.Sport;
 import it.unibo.oop.lab.socialnetwork.SocialNetworkUserImpl;
 import it.unibo.oop.lab.socialnetwork.User;
 
@@ -105,7 +106,7 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      public Set<Sport> getIndividualSports() {
          return getFilterSports(s -> s.isIndoorSport());
      } 
-     
+
     /** Returns the set of sports which are practiced in a given place.
      * 
      * @param p the place in which the sport is practiced in order to be
@@ -116,5 +117,14 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      public Set<Sport> getSportPracticedInPlace(Place p) {
          return null;
      }
-
+     
+     private Set<Sport> getFilterSports(final Predicate<Sport> filter) {
+         final Set<Sport> ret = new HashSet<>();
+         for (final Sport s : this.sports) {
+             if (filter.test(s)) {
+                 ret.add(s);
+             }
+         }
+         return ret;
+     }
 }

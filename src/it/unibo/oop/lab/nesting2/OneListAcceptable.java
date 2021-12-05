@@ -3,6 +3,7 @@ package it.unibo.oop.lab.nesting2;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Objects;
 
 /**
@@ -38,8 +39,12 @@ public class OneListAcceptable<T> implements Acceptable<T> {
              */
             @Override
             public void accept(final T newElement) throws ElementNotAcceptedException {
-                if (!newElement.equals(iterator.next())) {
-                    throw new ElementNotAcceptedException(newElement);
+                try {
+                    if (!newElement.equals(iterator.next())) {
+                        throw new ElementNotAcceptedException(newElement);
+                    }
+                } catch (NoSuchElementException e) {
+                    System.out.println("Elements terimated");
                 }
             }
 

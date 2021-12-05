@@ -52,12 +52,12 @@ public enum Sport {
      */
     VOLLEY(6, "Volleyball", Place.INDOOR);
 
-    
+
     private final int nTeamMember;
     private final String name;
     private final Place activityPlace;
 
-    private Sport(final int nTeamMember, final String name, final Place activityPlace) {
+    Sport(final int nTeamMember, final String name, final Place activityPlace) {
         this.nTeamMember = nTeamMember;
         this.name = name;
         this.activityPlace = activityPlace;
@@ -69,27 +69,27 @@ public enum Sport {
     public boolean isIndividualSport() {
         return this.nTeamMember == 1;
     }
-    
+
     /**
      * @return true in case the sport is practices indoor.
      */
     public boolean isIndoorSport() {
         return this.activityPlace.equals(Place.INDOOR);
     }
-    
+
     /**
      * @return the place where this sport is practiced
      */
     public Place getPlace() {
         return this.activityPlace;
     }
-    
+
     /**
      * @return the string representation of a sport.
      */
     @Override
     public String toString() {
-        return "Sport [Name: "+ this.name + ", Team members: "
-                + this.nTeamMember +", Activity place: "+ this.activityPlace +"]";
+        return "Sport [Name: " + this.name + ", Team members: "
+                + this.nTeamMember + ", Activity place: " + this.activityPlace + "]";
     }
 }

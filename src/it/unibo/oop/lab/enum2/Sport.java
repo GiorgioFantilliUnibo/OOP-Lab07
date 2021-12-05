@@ -88,6 +88,9 @@ public enum Sport {
      * 
      * Returns the string representation of a sport
      */
+    /**
+     * @return true only if called on individual sports.
+     */
     public boolean isIndividualSport() {
         return this.nTeamMember == 1;
     }

@@ -21,7 +21,7 @@ public final class TestSportByStaticInnerClass {
      */
     public static void main(final String... args) {
         /*
-         * TODO: create 3 sport social network users (SportSocialNetworkUser):
+         * create 3 sport social network users (SportSocialNetworkUser):
          * 
          * Davide Cassani , dcassani, 53
          * 
@@ -34,7 +34,7 @@ public final class TestSportByStaticInnerClass {
         final SportSocialNetworkUserImpl<User> falonso = new SportSocialNetworkUserImpl<>("Fernando", "Alonso", "falonso", 34);
 
         /*
-         * TODO: alonso is a fan of soccer and bike and practices F1: 
+         * alonso is a fan of soccer and bike and practices F1: 
          * add these sports to Alonso
          * 
          * falonso.addSport(SportSocialNetworkUserImpl.F1);

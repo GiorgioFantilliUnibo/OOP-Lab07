@@ -28,11 +28,6 @@ import it.unibo.oop.lab.socialnetwork.User;
  */
 public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUserImpl<U> {
 
-    /*
-     * TODO
-     * 
-     * add a field to keep track of the set of sports followed/done by a user
-     */
     private final Set<Sport> sports;
 
     /**
@@ -81,7 +76,6 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      * @param sport
      *            a sport followed/done by the user
      */
-    // TODO
     public void addSport(final Sport sport) {
         this.sports.add(sport);
     }

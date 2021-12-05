@@ -103,7 +103,7 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      * @return the set of individual sport this user practices/follows
      */
      public Set<Sport> getIndividualSports() {
-         return getFilterSports(s -> s.isIndoorSport());
+         return getFilterSports(s -> s.isIndividualSport());
      } 
 
     /** Returns the set of sports which are practiced in a given place.

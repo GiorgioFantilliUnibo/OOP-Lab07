@@ -29,8 +29,27 @@ public class OneListAcceptable<T> implements Acceptable<T> {
      */
     @Override
     public Acceptor<T> acceptor() {
-        // TODO Auto-generated method stub
-        return null;
+        return new Acceptor<T>() {
+
+            /**
+             *{@inheritDoc}
+             */
+            @Override
+            public void accept(final T newElement) throws ElementNotAcceptedException {
+                // TODO Auto-generated method stub
+                
+            }
+
+            /**
+             *{@inheritDoc}
+             */
+            @Override
+            public void end() throws EndNotAcceptedException {
+                // TODO Auto-generated method stub
+                
+            }
+
+        };
     }
 
 }

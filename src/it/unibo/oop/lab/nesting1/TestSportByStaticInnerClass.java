@@ -41,6 +41,10 @@ public final class TestSportByStaticInnerClass {
          * 
          * ...
          */
+        falonso.addSport(SportSocialNetworkUserImpl.F1);
+        falonso.addSport(SportSocialNetworkUserImpl.SOCCER);
+        falonso.addSport(SportSocialNetworkUserImpl.BIKE);
+        
         System.out.println("Alonso practices F1: " + falonso.hasSport(SportSocialNetworkUserImpl.F1));
         System.out.println("Alonso does not like volley: " + !falonso.hasSport(SportSocialNetworkUserImpl.VOLLEY));
         /*

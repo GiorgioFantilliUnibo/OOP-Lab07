@@ -94,4 +94,8 @@ public enum Sport {
     public boolean isIndividualSport() {
         return this.nTeamMember == 1;
     }
+    
+    public boolean isIndoorSport() {
+        return this.activityPlace.equals(Place.INDOOR);
+    }
 }

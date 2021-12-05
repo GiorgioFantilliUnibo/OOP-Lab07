@@ -8,7 +8,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.function.Predicate;
 
-import it.unibo.oop.lab.enum2.Sport;
 import it.unibo.oop.lab.socialnetwork.SocialNetworkUserImpl;
 import it.unibo.oop.lab.socialnetwork.User;
 

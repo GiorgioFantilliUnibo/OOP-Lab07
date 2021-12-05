@@ -57,15 +57,6 @@ public enum Sport {
     private final String name;
     private final Place activityPlace;
 
-    /*
-     * TODO
-     * 
-     * [CONSTRUCTOR]
-     * 
-     * Define a constructor like this:
-     * 
-     * - Sport(final Place place, final int noTeamMembers, final String actualName)
-     */
     private Sport(final int nTeamMember, final String name, final Place activityPlace) {
         this.nTeamMember = nTeamMember;
         this.name = name;

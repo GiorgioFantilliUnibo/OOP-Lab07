@@ -101,4 +101,8 @@ public enum Sport {
     public boolean isIndoorSport() {
         return this.activityPlace.equals(Place.INDOOR);
     }
+    
+    public Place getPlace() {
+        return this.activityPlace;
+    }
 }

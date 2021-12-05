@@ -39,12 +39,8 @@ public class OneListAcceptable<T> implements Acceptable<T> {
              */
             @Override
             public void accept(final T newElement) throws ElementNotAcceptedException {
-                try {
-                    if (!newElement.equals(iterator.next())) {
-                        throw new ElementNotAcceptedException(newElement);
-                    }
-                } catch (NoSuchElementException e) {
-                    System.out.println("Elements terimated");
+                if (!iterator.hasNext() || !newElement.equals(iterator.next())) {
+                    throw new ElementNotAcceptedException(newElement);
                 }
             }
 

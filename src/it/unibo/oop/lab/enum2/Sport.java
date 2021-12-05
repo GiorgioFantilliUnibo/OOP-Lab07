@@ -66,6 +66,11 @@ public enum Sport {
      * 
      * - Sport(final Place place, final int noTeamMembers, final String actualName)
      */
+    private Sport(final int nTeamMember, final String name, final Place activityPlace) {
+        this.nTeamMember = nTeamMember;
+        this.name = name;
+        this.activityPlace = activityPlace;
+    }
 
     /*
      * TODO

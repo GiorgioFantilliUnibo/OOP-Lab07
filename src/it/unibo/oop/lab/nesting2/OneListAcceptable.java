@@ -7,6 +7,8 @@ package it.unibo.oop.lab.nesting2;
  *             specific elements type.
  */
 public class OneListAcceptable<T> implements Acceptable<T> {
+    
+    private final List<T> elements;
 
     /**
      *{@inheritDoc}

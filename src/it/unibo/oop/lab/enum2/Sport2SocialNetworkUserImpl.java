@@ -4,6 +4,7 @@
 package it.unibo.oop.lab.enum2;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import it.unibo.oop.lab.enum1.Sport;
@@ -76,7 +77,7 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      *            a sport followed/done by the user
      */
     public void addSport(final Sport sport) {
-        this.sports.add(sport);
+        this.sports.add(Objects.requireNonNull(sport));
     }
 
     /**
@@ -88,7 +89,7 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      * @return true if user likes sport s
      */
     public boolean likesSport(final Sport s) {
-        return this.sports.contains(s);
+        return this.sports.contains(Objects.requireNonNull(s));
     }
 
     /*

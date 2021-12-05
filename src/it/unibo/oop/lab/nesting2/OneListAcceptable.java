@@ -1,12 +1,10 @@
 package it.unibo.oop.lab.nesting2;
 
-import it.unibo.oop.lab.socialnetwork.User;
-
 /**
- * Represent a list of {@link Acceptable} elements
+ * Represent a list of {@link Acceptable} elements.
  * 
  * @param <T>
- *             specific elements type
+ *             specific elements type.
  */
 public class OneListAcceptable<T> implements Acceptable<T> {
 

@@ -86,7 +86,7 @@ public enum Sport {
      * 
      * 4) public String toString()
      * 
-     * Returns the string representation of a sport
+     * Returns 
      */
     /**
      * @return true only if called on individual sports.
@@ -109,6 +109,10 @@ public enum Sport {
         return this.activityPlace;
     }
     
+    /**
+     * @return the string representation of a sport.
+     */
+    @Override
     public String toString() {
         return "Sport [Name: "+ this.name + ", Team members: "
                 + this.nTeamMember +", Activity place: "+ this.activityPlace +"]";

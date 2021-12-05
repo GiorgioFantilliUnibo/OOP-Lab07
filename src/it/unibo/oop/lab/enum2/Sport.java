@@ -50,7 +50,7 @@ public enum Sport {
     /**
      * Volleyball.
      */
-    VOLLEY(6, "Volleyball", Place.INDOOR)
+    VOLLEY(6, "Volleyball", Place.INDOOR);
 
     
     private final int nTeamMember;

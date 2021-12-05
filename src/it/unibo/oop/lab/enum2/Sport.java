@@ -64,27 +64,35 @@ public enum Sport {
     }
 
     /**
-     * @return true only if called on individual sports.
+     * Must return true only if called on individual sports.
+     * 
+     * @return true only if called on individual sports, otherwise false.
      */
     public boolean isIndividualSport() {
         return this.nTeamMember == 1;
     }
 
     /**
-     * @return true in case the sport is practices indoor.
+     * Must return true in case the sport is practices indoor.
+     * 
+     * @return true in case the sport is practices indoor, otherwise false.
      */
     public boolean isIndoorSport() {
         return this.activityPlace.equals(Place.INDOOR);
     }
 
     /**
-     * @return the place where this sport is practiced
+     * Must return the place where this sport is practiced.
+     * 
+     * @return the place where this sport is practiced.
      */
     public Place getPlace() {
         return this.activityPlace;
     }
 
     /**
+     * Returns the text representation of a sport.
+     * 
      * @return the string representation of a sport.
      */
     @Override

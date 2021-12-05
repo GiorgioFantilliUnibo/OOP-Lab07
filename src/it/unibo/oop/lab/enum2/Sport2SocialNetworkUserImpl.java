@@ -3,6 +3,9 @@
  */
 package it.unibo.oop.lab.enum2;
 
+import java.util.Set;
+
+import it.unibo.oop.lab.enum1.Sport;
 import it.unibo.oop.lab.socialnetwork.SocialNetworkUserImpl;
 import it.unibo.oop.lab.socialnetwork.User;
 
@@ -25,11 +28,7 @@ import it.unibo.oop.lab.socialnetwork.User;
  */
 public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUserImpl<U> {
 
-    /*
-     * TODO
-     * 
-     * add a field to keep track of the set of sports followed/done by a user
-     */
+    private final Set<Sport> sports;
 
     /**
      * Builds a new {@link Sport2SocialNetworkUserImpl}.

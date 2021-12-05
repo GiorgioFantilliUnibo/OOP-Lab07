@@ -13,7 +13,13 @@ import java.util.Objects;
 public class OneListAcceptable<T> implements Acceptable<T> {
 
     private final List<T> elements;
-    
+
+    /**
+     * Builds a new {@link OneListAcceptable}.
+     * 
+     * @param list
+     *          sequence of elements to accept
+     */
     public OneListAcceptable(final List<T> list) {
         this.elements = new LinkedList(Objects.requireNonNull(list));
     }

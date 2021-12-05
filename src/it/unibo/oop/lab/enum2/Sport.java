@@ -81,7 +81,7 @@ public enum Sport {
      * 
      * 3) public Place getPlace()
      * 
-     * Must return the place where this sport is practiced
+     * Must return 
      * 
      * 
      * 4) public String toString()
@@ -102,6 +102,9 @@ public enum Sport {
         return this.activityPlace.equals(Place.INDOOR);
     }
     
+    /**
+     * @return the place where this sport is practiced
+     */
     public Place getPlace() {
         return this.activityPlace;
     }

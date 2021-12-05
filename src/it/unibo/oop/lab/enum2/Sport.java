@@ -108,4 +108,9 @@ public enum Sport {
     public Place getPlace() {
         return this.activityPlace;
     }
+    
+    public String toString() {
+        return "Sport [Name: "+ this.name + ", Team members: "
+                + this.nTeamMember +", Activity place: "+ this.activityPlace +"]";
+    }
 }

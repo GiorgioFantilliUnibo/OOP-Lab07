@@ -114,10 +114,10 @@ public class Sport2SocialNetworkUserImpl<U extends User> extends SocialNetworkUs
      * 
      * @return the set of sport practiced in a given place
      */
-     public Set<Sport> getSportPracticedInPlace(Place p) {
-         return null;
+     public Set<Sport> getSportPracticedInPlace(final Place p) {
+         return getFilterSports(s -> s.getPlace().equals(p));
      }
-     
+
      private Set<Sport> getFilterSports(final Predicate<Sport> filter) {
          final Set<Sport> ret = new HashSet<>();
          for (final Sport s : this.sports) {

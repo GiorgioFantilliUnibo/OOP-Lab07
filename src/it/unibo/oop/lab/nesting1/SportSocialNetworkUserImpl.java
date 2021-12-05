@@ -50,16 +50,13 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
      */
     public static final Sport BIKE;
 
-    /*
-     * TODO: initialize properly these sports
-     */
     static {
-        SOCCER = new Sport("Soccer");
+        SOCCER = new Sport("Football");
         F1 = new Sport("Formula One");
         MOTOGP = new Sport("Moto GP");
-        VOLLEY = new Sport("Volley");
-        BASKET = new Sport("Basket");
-        BIKE = new Sport("Bike");
+        VOLLEY = new Sport("Volleyball");
+        BASKET = new Sport("Basketball");
+        BIKE = new Sport("Cycling");
     }
 
     /**

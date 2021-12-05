@@ -52,13 +52,10 @@ public enum Sport {
      */
     VOLLEY(6, "Volleyball", Place.INDOOR)
 
-    /*
-     * TODO
-     * 
-     * [FIELDS]
-     * 
-     * Declare required fields
-     */
+    
+    private final int nTeamMember;
+    private final String name;
+    private final Place activityPlace;
 
     /*
      * TODO

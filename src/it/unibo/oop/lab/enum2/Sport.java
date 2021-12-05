@@ -63,31 +63,6 @@ public enum Sport {
         this.activityPlace = activityPlace;
     }
 
-    /*
-     * TODO
-     * 
-     * [METHODS] To be defined
-     * 
-     * 
-     * 1) public boolean isIndividualSport()
-     * 
-     * Must return true only if called on individual sports
-     * 
-     * 
-     * 2) public boolean isIndoorSport()
-     * 
-     * Must return 
-     * 
-     * 
-     * 3) public Place getPlace()
-     * 
-     * Must return 
-     * 
-     * 
-     * 4) public String toString()
-     * 
-     * Returns 
-     */
     /**
      * @return true only if called on individual sports.
      */

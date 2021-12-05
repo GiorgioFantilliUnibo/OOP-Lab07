@@ -4,7 +4,7 @@
 package it.unibo.oop.lab.enum1;
 
 /**
- * Represents an enumeration for declaring sports;
+ * Represents an enumeration for declaring sports.
  */
 public enum Sport {
     /**
